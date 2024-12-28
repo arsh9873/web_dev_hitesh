@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+</head>
+<body>
+    <h2>Login Form</h2>
+    <form action="">
+        <label for="email">email:</label>
+        <input type="email" name="email" id="">
+        <label for="password">password:</label>
+        <input placeholder="enter password" type="password" name="password" id="">
+        <button type="submit">Login</button>
+         <!-- <button type="reset">reset</button> -->
+    </form>
+    <div>
+        <h2>Learning Form</h2>
+        <form action="">
+            <label for="email">email:</label>
+            <input type="email" name="" id="">
+            <label for="comments">Enter current skills:</label>
+            <textarea rows="5" cols="20" name="comments" id=""></textarea>
+            <label for="sports">Select favorite sport:</label>
+                <select name="sports" id="">
+                    <option value="">--Please Select an option</option>
+                    <option value="football" selected>Football</option>
+                    <option value="cricket">Cricket</option>
+                </select>
+            <label for="date">Select week when you are free:</label>
+            <input type="week" name="date" id="">
+            <label for="phone">Enter Phone Number:</label>
+            <input type="tel" name="phone" pattern="[9][1]--[0-9]{10}" id="">
+        </form>
+    </div>
+    <br><br>
+    <label for="test">enter your name:</label>
+    <input type="text" name="test" id="">
+    <!-- write label and / and then input and /, dont enclose them , even though you could, its
+     better overall according to ai , use for in label and id in the input to associate them
+     together -->
+     <form >
+        <fieldset>
+            <legend>choose best player:</legend>
+            <input type="radio" name="bestplayer" id="Ronaldo">
+            <label for="Ronaldo">Ronaldo</label>
+            <input type="radio" name="bestplayer" id="Messi">
+            <label for="Messi">Messi</label>
+        </fieldset>
+     </form>
+     <!-- as you can see, till you put the same name on both the inputs, how is the radio
+      input type supposed to figure out which inputs should be such that the user can choose
+      only one -->
+      <form action="#">
+        <fieldset disabled>
+          <legend>Disabled login fieldset</legend>
+          <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" value="Arsh" />
+          </div>
+          <div>
+            <label for="pwd">Archetype: </label>
+            <input type="password" id="pwd" value="Lazy" />
+          </div>
+        </fieldset>
+      </form>
+      
+</body>
+</html>
